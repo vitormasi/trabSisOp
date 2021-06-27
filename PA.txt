@@ -1,0 +1,4 @@
+1; Identificador de processo
+20; enderecos de memoria necessarios (tamanho do processo)
+l 5; carrega o endereco 5
+s 2, 15; armazena valor 2 no endereco 15

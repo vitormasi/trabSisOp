@@ -1,0 +1,5 @@
+Executando arquivo de id 1 com tamanho de processo 20 com método de substituição FIFO
+[l 5] - FALHA substituição de registro na memória virtual: 0 -> 5 | retorno: 5
+[s 2, 15] - Registro gravado na memória pricipal: 2 -> 15
+[s 2, 15] - Registro na memória virtual | retorno: 15
+Programa encerrado com 1 falhas.
