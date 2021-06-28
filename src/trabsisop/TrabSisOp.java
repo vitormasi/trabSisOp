@@ -11,10 +11,7 @@ public class TrabSisOp {
 	
 	static final String CAMINHO_ARQUIVO = "PA.txt";
 
-	public static void main(String[] args) throws IOException {
-            //zera a variável log caso esteja utilizada de outra execução
-            Path path = Paths.get("log.txt");
-            Files.write(path, "".getBytes());
+	public static void main(String[] args) throws IOException {         
             
             Scanner sc = new Scanner(System.in);
 	    int Tam_memoria; // variavel para o tamanho da memoria principal
@@ -27,7 +24,9 @@ public class TrabSisOp {
             Tam_paginas = sc.nextInt();
     
             ExecutaMemoria executaMemoria = new ExecutaMemoria();
-            executaMemoria.init(Tam_memoria, Tam_paginas);
+            executaMemoria.setTamanhoPagina(Tam_paginas);
+            executaMemoria.setTamanhoMemoriaFisica(Tam_memoria);
+            executaMemoria.init();
                 
             //mantem o programa em execução até que encerre
             Boolean encerra = false;
@@ -57,7 +56,7 @@ public class TrabSisOp {
                         
                         System.out.println("Informe o caminho do arquivo:");
                         String caminho = sc.next();
-                        path = Paths.get(caminho);
+                        Path path = Paths.get(caminho);
                         List<String> linhasArquivo = Files.readAllLines(path);
                         String id = "";
                         for (String l : linhasArquivo) {
@@ -79,7 +78,7 @@ public class TrabSisOp {
                                 if('s' == split[0].charAt(0)){
                                     String store = split[0].substring(2);
                                     String[] splitStore = store.split(",");
-                                    executaMemoria.exec("s", splitStore[0].trim(), splitStore[1].trim());
+                                    executaMemoria.exec("s", splitStore[1].trim(), splitStore[0].trim());
                                 } else {
                                     String[] splitStore = split[0].split(" ");
                                     executaMemoria.exec("l", splitStore[1].trim(), null);

@@ -1,5 +1,20 @@
-Executando arquivo de id 1 com tamanho de processo 20 com método de substituição FIFO
-[l 5] - FALHA substituição de registro na memória virtual: 0 -> 5 | retorno: 5
-[s 2, 15] - Registro gravado na memória pricipal: 2 -> 15
-[s 2, 15] - Registro na memória virtual | retorno: 15
-Programa encerrado com 1 falhas.
+Executando arquivo de id 1 com tamanho de processo 60 com método de substituição Segunda Chance
+[l 35] - FALHA substituição de registro na memória: 0 -> página 3 | retorno: 5
+[s 15, alterado] - Alterando o disco na página 1 posição 5 para o valor -> alterado
+[s 15, alterado] - FALHA substituição de registro na memória: 1 -> página 1 | retorno: alterado
+[s 1, alterado2] - Alterando o disco na página 0 posição 1 para o valor -> alterado2
+[s 1, alterado2] - FALHA substituição de registro na memória: 2 -> página 0 | retorno: alterado2
+[l 20] - FALHA substituição de registro na memória: 3 -> página 2 | retorno: 0
+[s 42, alterado3] - Alterando o disco na página 4 posição 2 para o valor -> alterado3
+[s 42, alterado3] - FALHA substituição de registro na memória: 0 -> página 4 | retorno: alterado3
+[l 42] - Registro na memória | retorno: alterado3
+Executando arquivo de id 2 com tamanho de processo 60 com método de substituição Segunda Chance
+[l 32] - FALHA substituição de registro na memória: 1 -> página 3 | retorno: 2
+[s 28, alterado4] - Alterando o disco na página 2 posição 8 para o valor -> alterado4
+[s 28, alterado4] - Registro na memória | retorno: 8
+[s 5, alterado5] - Alterando o disco na página 0 posição 5 para o valor -> alterado5
+[s 5, alterado5] - Registro na memória | retorno: 5
+[l 28] - Registro na memória | retorno: 8
+[s 43, alterado6] - Alterando o disco na página 4 posição 3 para o valor -> alterado6
+[s 43, alterado6] - Registro na memória | retorno: 3
+[l 15] - FALHA substituição de registro na memória: 2 -> página 1 | retorno: alterado
