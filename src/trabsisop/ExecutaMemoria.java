@@ -164,15 +164,15 @@ public class ExecutaMemoria {
             referenciaPorPagina.set(getIndexPaginaArrayReferenciaPorPagina(pagina), Arrays.asList(pagina, 1));
             
         } else {
-            //remove a primeira posição e add o novo registro da memória principal na última posição
+            //remove a primeira posição e add a nova página na última posição
             prioridadeVitimaFifo.remove(0);
             prioridadeVitimaFifo.add(pagina);
             
-            //remove a primeira posição e add o novo registro da memória principal na última posição
+            //remove a primeira posição e add o nova página na última posição
             prioridadeVitimaLru.remove(0);
             prioridadeVitimaLru.add(pagina);
            
-            //remove a página que estava na posição da segunda chance e adiciona o novo registro da memória principal com bit referencia 1
+            //remove a página que estava na posição da segunda chance e adiciona o novo registro da página com bit referencia 1
             referenciaPorPagina.set(posicaoSegundaChance, Arrays.asList(pagina, 1));
             addPosicaoSegundaChance();
         }

@@ -14,11 +14,11 @@ public class TrabSisOp {
 	public static void main(String[] args) throws IOException {         
             
             Scanner sc = new Scanner(System.in);
-	    int Tam_memoria; // variavel para o tamanho da memoria principal
+	    int Tam_memoria; // variavel para o tamanho da memoria física
 	    int Tam_paginas;// variavel para o tamanho das páginas
 	    int escolha;
-	    //usuário digita qual será o tamanho da memória principal e o tamanho das páginas
-            System.out.println("Digite o tamanho da memória principal: ");
+	    //usuário digita qual será o tamanho da memória física e o tamanho das páginas
+            System.out.println("Digite o tamanho da memória física: ");
             Tam_memoria = sc.nextInt();
             System.out.println("Digite o tamanho das páginas: ");
             Tam_paginas = sc.nextInt();
