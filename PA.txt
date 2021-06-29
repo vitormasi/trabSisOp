@@ -1,8 +1,8 @@
 1; Identificador de processo
 60; enderecos de memoria necessarios (tamanho do processo)
-l 35; carrega o endereco 5
-s alterado, 15; armazena valor 2 no endereco 15
-s alterado2, 1; armazena valor 2 no endereco 15
-l 20; carrega o endereco 5
-s alterado3, 42; armazena valor 2 no endereco 15
+l 35; carrega o endereco 35
+s alterado, 15; armazena valor alterado no endereco 15
+s alterado2, 1; armazena valor alterado2 no endereco 1
+l 20; carrega o endereco 20
+s alterado3, 42; armazena valor alterado3 no endereco 42
 l 42;
