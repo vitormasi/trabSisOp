@@ -8,8 +8,6 @@ import java.nio.file.Paths;
 
 
 public class TrabSisOp {
-	
-	static final String CAMINHO_ARQUIVO = "PA.txt";
 
 	public static void main(String[] args) throws IOException {         
             
